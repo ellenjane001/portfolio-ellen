@@ -14,7 +14,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
+    color: black;
 }
 
 /* ////////////// SCROLL BAR */
@@ -46,7 +47,6 @@ body {
 }
 
 .navigation {
-    color: #EEEEEE;
     display: inline-flex;
     align-items: center;
     padding: 30px;
@@ -68,16 +68,22 @@ li {
 }
 
 li a,
+.footer a,
+.header-wrapper,
+.navigation,
+.footer {
+    color: #EEEEEE;
+}
+
+li a,
 .footer a {
     text-decoration: none;
-    color: #EEEEEE;
 }
 
 .header-wrapper {
     padding: 10px;
     display: inline-flex;
     flex-direction: column;
-    color: #EEEEEE;
     align-items: center;
     width: -webkit-fill-available;
 }
@@ -86,7 +92,7 @@ li a,
 .header-wrapper,
 .navigation,
 .footer {
-    background-color: #222831;
+    background-color: #222831 !important;
 
 }
 
@@ -106,75 +112,93 @@ li a,
 }
 
 h1 {
+    color: #FFD369 !important;
     margin: 0 !important;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive !important;
     letter-spacing: 5px;
     text-align: center;
-    color: #EEEEEE;
     overflow-wrap: break-word;
     font-size: 50px;
 }
 
+h3 {
+    margin: 0 !important;
+    color: #EEEEEE !important;
+    text-align: center;
+    padding-left: 100px;
+    font-family: 'Inter', sans-serif !important;
+
+}
 
 .middle {
-    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.middle-top>* {
+    margin: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.middle-top {
+    display: inline-flex;
+}
+
+.intro-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.middle-bottom {
     display: inline-flex;
     width: -webkit-fill-available;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+
+}
+
+.middle-bottom ul {
+    flex-wrap: wrap;
 }
 
 .middle,
 .bottom {
     padding: 0 30px 0 30px;
+}
 
+.my-projects-list ul {
+    padding-left: 100px;
+}
+
+.my-projects-list ul li {
+    list-style: disc;
 }
 
 
-.middle-left {
+
+.skills,
+.frameworks {
     display: inline-flex;
     flex-direction: column;
-    padding: 10px;
-    width: 50%;
-}
-
-.middle-left>* {
-    margin: 10px;
-}
-
-.middle-right {
-    width: 50%;
-    padding: 10px;
-    display: inline-flex;
-    flex-direction: column;
+    margin: 0 10px 0 10px;
     align-items: center;
-}
-
-.middle-right ul {
-    flex-wrap: wrap;
-}
-
-.social-media-links {
-    border: solid gainsboro 1px;
-    margin: 5px;
-    border-radius: 30px;
-    display: inline-flex;
-    flex-direction: column;
+    background-color: #FFD369;
+    border-radius: 10px;
     padding: 10px;
-    align-items: center;
+    margin-bottom: 10px;
 }
 
-.social-media-links>* {
-    margin: 10px;
-}
 
-ul.social-media-list {
-    margin: 10px;
 
-}
-
-ul.social-media-list li a {
-    color: black;
+.bottom {
+    background: #393E46;
+    color: #EEEEEE;
+    padding: 30px;
 }
 
 .bottom>#bio {
@@ -186,17 +210,54 @@ ul.social-media-list li a {
     text-indent: 50px;
 }
 
-.contact-details {
+.bottom-top {
     width: -webkit-fill-available;
+    display: inline-flex;
+    align-items: center;
+}
+
+.bottom-top>* {
+    margin: 10px;
+}
+
+.about {
+    padding: 10px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid gainsboro;
+}
+
+.contact-details,
+.social-media-links {
+    width: -webkit-fill-available;
+
+}
+
+.contact-details {
+    display: inline-flex;
+    align-items: center;
     margin: 0 0 10px 0;
+    justify-content: center;
 }
 
 .contact-details>* {
     margin: 5px;
+}
+
+.social-media-links {
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+ul.social-media-list {
+    margin: 2px;
+    padding: 0;
+}
+
+ul.social-media-list li a {
+    color: black !important;
 }
 
 .footer {
@@ -205,7 +266,6 @@ ul.social-media-list li a {
     padding: 10px;
     display: inline-flex;
     flex-direction: column;
-    color: #EEEEEE;
 }
 
 .footer>* {

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
 </head>
 
 <body>
@@ -26,9 +28,6 @@
                     <a href="#bio">Biography</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0);">Expertise</a>
-                </li>
-                <li>
                     <a href="#contact">Contact Details</a>
                 </li>
             </ul>
@@ -40,30 +39,31 @@
             <div class="container">
                 <div class="top">
                     <div class="top-left">
-                        <h1>Junior Web Developer</h1>
+                        <h1>Ellen Jane Cababaro</h1>
+                        <h3>Junior Web Developer</h5>
                     </div>
                     <div class="top-right">
                         <img src="./images/woman.webp" width="400" height="400" alt="" class="">
                     </div>
                 </div>
                 <div class="middle">
-                    <div class="middle-left">
-                        <span class="greetings">Hi! I'm Ellen...</span>
-                        <span>I am currently learning to be a full-stack developer.</span>
-
-                        <div class="social-media-links">
-                            <span>Find me here:</span>
-                            <ul class="social-media-list">
-                                <li><a href="javascript:void(0);"><i class="fab fa-facebook-square"></i>
-                                        Facebook</a></li>
-                                <li><a href="javascript:void(0);"> <i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                                <li><a href="javascript:void(0);"> <i class="fab fa-github"></i> Github</a></li>
-                                <li><a href="javascript:void(0);"> <i class="fab fa-dev"></i> Dev.to</a></li>
-                            </ul>
-
+                    <div class="middle-top">
+                        <div class="my-projects">
+                            <span>My Projects...</span>
+                            <div class="my-projects-list">
+                                <ul>
+                                    <li>Ticket System</li>
+                                    <li>CSS Practice</li>
+                                    <li>E-commerce</li>
+                                </ul>
+                            </div>
                         </div>
+
                     </div>
-                    <div class="middle-right">
+
+                    <div class="middle-bottom">
+
+
                         <div class="skills">
                             <span>Development Skills :</span>
                             <ul>
@@ -87,6 +87,7 @@
                                 <li></li>
                             </ul>
                         </div>
+
                     </div>
 
                 </div>
@@ -153,10 +154,33 @@
                             sint! Itaque tempore commodi laborum a et aut sunt asperiores quam. Fugiat et quae quas
                             praesentium.</p>
                     </div>
+
                     <div id="contact" class="contact-details">
-                        <span><i class="far fa-envelope"></i> ejcababaro317@gmail.com</span>
-                        <span><i class="fas fa-mobile-alt"></i> (+63)930-897-9727</span>
+                        <div class="left">
+                            <span><i class="far fa-envelope"></i> ejcababaro317@gmail.com</span>
+                            <span><i class="fas fa-mobile-alt"></i> (+63)930-897-9727</span>
+                        </div>
+                        <div class="right">
+                            <div class="social-media-links">
+                                <span class="uk-text-italic">Find me here:</span>
+                                <ul class=" social-media-list">
+                                    <li><a href="javascript:void(0);">
+                                            <i class="fab fa-facebook-square"></i>
+                                            Facebook</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">
+                                            <i class="fab fa-linkedin"></i>
+                                            LinkedIn</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);"> <i class="fab fa-github"></i> Github</a></li>
+                                    <li><a href="javascript:void(0);"> <i class="fab fa-dev"></i> Dev.to</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
             <div class="footer">
@@ -166,6 +190,10 @@
         </div>
 
     </div>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
