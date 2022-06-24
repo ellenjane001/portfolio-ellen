@@ -250,6 +250,9 @@ h3 {
     align-items: center;
 }
 
+.badge {
+    text-align: center;
+}
 
 ul.social-media-list {
     margin: 2px;
@@ -258,6 +261,10 @@ ul.social-media-list {
 
 ul.social-media-list li a {
     color: black !important;
+}
+
+a.g-dev-link {
+    display: inline-flex;
 }
 
 .footer {
