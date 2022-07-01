@@ -6,6 +6,8 @@
     --yellow: #FFD369;
     --grey: #EEEEEE;
     --darkblueish: #222831;
+    --white: #FFFFFF;
+    --darkblue: #393E46;
 }
 
 html {
@@ -155,6 +157,13 @@ h3 {
 
 }
 
+
+.middle h1,
+.below-the-bottom h1 {
+    margin-top: 20px;
+    color: black;
+}
+
 .middle-top>* {
     margin: 10px;
     padding: 0 10px 0 10px;
@@ -214,9 +223,14 @@ h3 {
 
 .bottom,
 .below-below-bottom {
-    background: #393E46;
+    background: var(--darkblue);
     color: var(--grey);
     padding: 30px;
+}
+
+.bottom h1,
+.below-below-bottom h1 {
+    color: var(--yellow);
 }
 
 .bottom>#bio {
@@ -279,6 +293,14 @@ h3 {
 .social-media-links {
     width: -webkit-fill-available;
 
+}
+
+.contact-details-wrapper {
+    display: inline-flex;
+}
+
+.contact-details-wrapper>* {
+    margin: 10px
 }
 
 .contact-details {
