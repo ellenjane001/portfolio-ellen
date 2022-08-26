@@ -115,20 +115,18 @@ ol {
 .top {
     display: flex;
     align-items: center;
-}
-
-.top-left {
-    width: 50%;
-}
-
-.top-left h1 {
-    color: var(--yellow);
-}
-
-.top-right {
-    width: 50%;
-    display: inline-flex;
     justify-content: center;
+    padding: 10px;
+    gap: 50px;
+}
+
+.top .top-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.top .top-wrapper h1 {
+    color: var(--yellow);
 }
 
 h1 {
@@ -189,6 +187,7 @@ h3 {
 
 .middle-bottom ul {
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .middle,
