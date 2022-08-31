@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+:root {
+  --yellow: #FFD369;
+  --grey: #EEEEEE;
+  --darkblueish: #222831;
+  --white: #FFFFFF;
+  --darkblue: #393E46;
+}
+
+html {
+  box-sizing: border-box;
+  outline: 0;
+  height: 100vh;
+  width: 100%;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+html ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif !important;
+  color: black;
+}
+html body .top,
+html body .header-wrapper,
+html body .navigation,
+html body .footer {
+  background-color: var(--darkblueish) !important;
+}
+html body li a,
+html body .footer a,
+html body .header-wrapper,
+html body .navigation,
+html body .footer {
+  color: var(--grey);
+}
+html body li a,
+html body .footer a {
+  text-decoration: none;
+}
+html body .main-container {
+  display: flex;
+  flex-direction: column;
+}
+html body .main-container ul {
+  display: inline-flex;
+}
+html body .main-container ul li {
+  list-style: none;
+  margin: 10px;
+  word-break: break-word;
+}
+html body .main-container ol {
+  margin-top: 5px !important;
+}
+html body .main-container h1 {
+  font-family: "Dancing Script", cursive !important;
+  letter-spacing: 5px;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-size: 50px;
+}
+html body .main-container h3 {
+  margin: 0 !important;
+  color: var(--grey) !important;
+  text-align: center;
+  padding-left: 100px;
+  font-family: "Inter", sans-serif !important;
+}
+html body .main-container .navigation {
+  display: inline-flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
+}
+html body .main-container .navigation .logo .logo-text {
+  font-family: "Bungee Shade", cursive;
+  font-size: 30px;
+}
+html body .main-container .middle,
+html body .main-container .bottom,
+html body .main-container .below-the-bottom {
+  padding: 0 30px 0 30px;
+}
+html body .main-container .bottom,
+html body .main-container .below-below-bottom {
+  background: var(--darkblue);
+  color: var(--grey);
+  padding: 30px;
+}
+html body .main-container .bottom h1,
+html body .main-container .below-below-bottom h1 {
+  color: var(--yellow);
+}
+html body .main-container .middle h1,
+html body .main-container .below-the-bottom h1 {
+  margin-top: 20px;
+  color: black;
+}
+html body .main-container .wrapper .header-wrapper {
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: -webkit-fill-available;
+}
+html body .main-container .wrapper .container .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 50px;
+}
+html body .main-container .wrapper .container .top .top-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
+html body .main-container .wrapper .container .top .top-wrapper h1 {
+  color: var(--yellow);
+}
+html body .main-container .wrapper .container .middle {
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+  align-items: center;
+  justify-content: center;
+}
+html body .main-container .wrapper .container .middle h1 {
+  padding: 0;
+  margin: 0;
+}
+html body .main-container .wrapper .container .middle .middle-wrapper {
+  padding: 30px;
+}
+html body .main-container .wrapper .container .middle .middle-wrapper .skills,
+html body .main-container .wrapper .container .middle .middle-wrapper .frameworks {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0 10px 0 10px;
+  align-items: center;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+html body .main-container .wrapper .container .bottom > #bio {
+  text-align: justify;
+  text-justify: inter-word;
+}
+html body .main-container .wrapper .container .bottom > #bio p {
+  text-indent: 50px;
+}
+html body .main-container .wrapper .container .bottom-top {
+  width: -webkit-fill-available;
+  display: inline-flex;
+  align-items: center;
+}
+html body .main-container .wrapper .container .bottom-top > * {
+  margin: 10px;
+}
+html body .main-container .about {
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .main-container .contact-details,
+html body .main-container .social-media-links {
+  width: -webkit-fill-available;
+}
+html body .main-container .contact-details-wrapper {
+  display: inline-flex;
+}
+html body .main-container .contact-details-wrapper > * {
+  margin: 10px;
+}
+html body .main-container .contact-details {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+  justify-content: center;
+}
+html body .main-container .contact-details > * {
+  margin: 5px;
+}
+html body .main-container .social-media-links {
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+html body .main-container .badge {
+  text-align: center;
+}
+html body .main-container ul.social-media-list {
+  margin: 2px;
+  padding: 0;
+}
+html body .main-container ul.social-media-list li a {
+  color: black !important;
+}
+html body .main-container a.g-dev-link {
+  display: inline-flex;
+}
+html body .footer {
+  width: -webkit-fill-available;
+  align-items: center;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+}
+html body .footer > * {
+  margin: 5px;
+}/*# sourceMappingURL=style.css.map */
