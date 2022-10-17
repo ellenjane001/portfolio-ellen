@@ -128,11 +128,10 @@ html {
                 background: var(--darkblue);
                 color: var(--grey);
                 padding: 30px;
-            }
 
-            .bottom h1,
-            .below-below-bottom h1 {
-                color: var(--yellow);
+                h1 {
+                    color: var(--yellow);
+                }
             }
 
             .middle h1,
@@ -209,12 +208,33 @@ html {
 
                     .bottom {
 
-                        &>#bio {
-                            text-align: justify;
-                            text-justify: inter-word;
+                        .bottom-container {
+                            display: flex;
+                            gap: 20px;
+                            align-items: flex-end;
 
-                            p {
-                                text-indent: 50px;
+                            div {
+                                display: inline-flex;
+                                flex-direction: column;
+                                align-items: center;
+
+
+                                h3 {
+                                    padding: 0 !important;
+
+                                }
+
+
+                                img {
+                                    height: 300px;
+                                    border-radius: 5px;
+                                }
+
+                                &:nth-child(2) {
+                                    img {
+                                        height: 250px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -249,10 +269,10 @@ html {
 
             .contact-details-wrapper {
                 display: inline-flex;
-            }
 
-            .contact-details-wrapper>* {
-                margin: 10px
+                &>* {
+                    margin: 10px
+                }
             }
 
             .contact-details {
@@ -260,10 +280,10 @@ html {
                 align-items: center;
                 margin: 0 0 10px 0;
                 justify-content: center;
-            }
 
-            .contact-details>* {
-                margin: 5px;
+                &>* {
+                    margin: 5px;
+                }
             }
 
             .social-media-links {
@@ -279,10 +299,12 @@ html {
             ul.social-media-list {
                 margin: 2px;
                 padding: 0;
-            }
 
-            ul.social-media-list li a {
-                color: black !important;
+                li {
+                    a {
+                        color: black !important;
+                    }
+                }
             }
 
             a.g-dev-link {
@@ -298,10 +320,10 @@ html {
             padding: 10px;
             display: inline-flex;
             flex-direction: column;
-        }
 
-        .footer>* {
-            margin: 5px;
+            &>* {
+                margin: 5px;
+            }
         }
 
     }
